@@ -1,0 +1,6 @@
+@AngularRoman2Int.Server_HostAddress = http://localhost:5186
+
+GET {{AngularRoman2Int.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AngularRoman2Int.Server", "AngularRoman2Int.Server\AngularRoman2Int.Server.csproj", "{916F3287-F8A3-4E1D-8C51-11BBBCDD0A10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Roman2Int.Lib", "Roman2Int.Lib\Roman2Int.Lib.csproj", "{F6DFB03F-7BFA-43F1-B0FD-DE2FB7A900AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{B1B99638-F465-4876-90D0-D324C32BF7D5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Int2Roman", "Int2Roman.Lib\Int2Roman.csproj", "{71462374-7D5B-42C2-AA08-D43E3C761D59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{916F3287-F8A3-4E1D-8C51-11BBBCDD0A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916F3287-F8A3-4E1D-8C51-11BBBCDD0A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916F3287-F8A3-4E1D-8C51-11BBBCDD0A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916F3287-F8A3-4E1D-8C51-11BBBCDD0A10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6DFB03F-7BFA-43F1-B0FD-DE2FB7A900AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6DFB03F-7BFA-43F1-B0FD-DE2FB7A900AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6DFB03F-7BFA-43F1-B0FD-DE2FB7A900AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6DFB03F-7BFA-43F1-B0FD-DE2FB7A900AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71462374-7D5B-42C2-AA08-D43E3C761D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71462374-7D5B-42C2-AA08-D43E3C761D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71462374-7D5B-42C2-AA08-D43E3C761D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71462374-7D5B-42C2-AA08-D43E3C761D59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{916F3287-F8A3-4E1D-8C51-11BBBCDD0A10} = {B1B99638-F465-4876-90D0-D324C32BF7D5}
+		{F6DFB03F-7BFA-43F1-B0FD-DE2FB7A900AB} = {B1B99638-F465-4876-90D0-D324C32BF7D5}
+		{71462374-7D5B-42C2-AA08-D43E3C761D59} = {B1B99638-F465-4876-90D0-D324C32BF7D5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73587D93-75EE-41A7-B209-45217E421807}
+	EndGlobalSection
+EndGlobal
