@@ -1,6 +1,7 @@
 
 using Roman2Int.Lib;
 using Int2Roman;
+using Microsoft.AspNetCore.Authentication.Negotiate;
 
 namespace AngularRoman2Int.Server
 {
@@ -21,6 +22,12 @@ namespace AngularRoman2Int.Server
 
             var MyAllowSpecificOrigins = "_origins";
 
+            // Enables Windows authorization
+            builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
+                .AddNegotiate();
+
+            builder.Services.AddAuthorization();
+
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy(MyAllowSpecificOrigins,
@@ -29,7 +36,8 @@ namespace AngularRoman2Int.Server
                                           policy.WithOrigins("http://localhost:4200",
                                                               "https://localhost:4200")
                                                               .AllowAnyHeader()
-                                                              .AllowAnyMethod();
+                                                              .AllowAnyMethod()
+                                                              .AllowCredentials();
                                       });
             });
 
@@ -49,6 +57,8 @@ namespace AngularRoman2Int.Server
 
             app.UseHttpsRedirection();
 
+            // Enable Windows Authentication & Authorization
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
